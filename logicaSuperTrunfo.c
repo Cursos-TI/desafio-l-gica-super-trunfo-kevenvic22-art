@@ -53,7 +53,7 @@ int main() {
   scanf("%d", &numero_de_pontos_Turísticos);
   
                                                                                                                                
-  printf ("\n    **** Cadastro da Carta 2 ****\n");
+  printf ("\n  **** Cadastro da Carta 2 ****\n");
   printf("(O estado deve ser representado pela sua sigla) \n Digite a sigla do estado 2:\n");
   scanf("%2s", Estado);
   printf("Digite o nome da cidade 2:\n");
@@ -76,42 +76,49 @@ int main() {
   PIB_per_Capito2 = (float) PIB2 / Populacao2;                                                                                                                                                                                                          
 
   // Comparação de Cartas:
-  printf ("\n    **** Resultados da Comparação ****\n");                                                                                                                                                                                                                
-  
+  printf ("\n   **** Resultados da Comparação ****\n");
+
+    printf("\nPopulacao: %s = %lu\n", Nome_da_Cidade, Populacao);
+    printf("Populacao: %s = %lu\n", Nome_da_Cidade2, Populacao2);
   if(Populacao > Populacao2){
-      printf ("A cidade com maior população é: %s\n", Nome_da_Cidade);
+      printf("A cidade vencedora é: %s\n", Nome_da_Cidade);
   } else {
-      printf ("A cidade com maior população é: %s\n", Nome_da_Cidade2);
+      printf ("A cidade vencedora é: %s\n", Nome_da_Cidade2);
   }
-
+    printf("\nArea: %s = %2f\n", Nome_da_Cidade, Area);
+    printf("Area: %s = %2f\n", Nome_da_Cidade2, Area2);
   if(Area > Area2){
-      printf ("A cidade com maior área é: %s\n", Nome_da_Cidade);
+      printf ("A cidade vencedora  é: %s\n", Nome_da_Cidade);
   } else { 
-      printf ("A cidade com maior área é: %s\n", Nome_da_Cidade2);
+      printf ("A cidade vencedora  é: %s\n", Nome_da_Cidade2);
   }
-
+    printf("\nPIB: %s = %2f\n", Nome_da_Cidade, PIB);
+    printf("PIB: %s = %2f\n", Nome_da_Cidade2, PIB2);
   if(PIB > PIB2){
-      printf ("A cidade com maior PIB é: %s\n", Nome_da_Cidade);
+      printf ("A cidade vencedora é: %s\n", Nome_da_Cidade);
   } else {
-      printf ("A cidade com maior PIB é: %s\n", Nome_da_Cidade2);
+      printf ("A cidade vencedora é: %s\n", Nome_da_Cidade2);
   }
-
+    printf("\nNúmero de pontos turísticos: %s = %d\n", Nome_da_Cidade, numero_de_pontos_Turísticos);
+    printf("Número de pontos turísticos: %s = %d\n", Nome_da_Cidade, numero_de_pontos_Turísticos2);
   if(numero_de_pontos_Turísticos > numero_de_pontos_Turísticos2){
-      printf ("A cidade com maior número de pontos turísticos é: %s\n", Nome_da_Cidade);
+      printf ("A cidade vencedora é: %s\n", Nome_da_Cidade);
   } else {
-      printf ("A cidade com maior número de pontos turísticos é: %s\n", Nome_da_Cidade2);
+      printf ("A cidade vencedora é: %s\n", Nome_da_Cidade2);
   }
-
+    printf("\nDensidade Populacional: %s = %.2f\n", Nome_da_Cidade, Dencidade_Populacional);
+    printf("Densidade Populacional: %s = %.2f\n", Nome_da_Cidade2, Dencidade_Populacional2);
   if(Dencidade_Populacional > Dencidade_Populacional2){
-      printf ("A cidade com maior densidade populacional é: %s\n", Nome_da_Cidade);
+      printf ("A cidade vencedora é: %s\n", Nome_da_Cidade);
   } else {
-      printf ("A cidade com maior densidade populacional é: %s\n", Nome_da_Cidade2);
+      printf ("A cidade vencedora é: %s\n", Nome_da_Cidade2);
   }
-
+    printf("\nPIB per Capito: %s = %.2f\n", Nome_da_Cidade, PIB_per_Capito);
+    printf("PIB per Capito: %s = %.2f\n", Nome_da_Cidade2, PIB_per_Capito2);
   if(PIB_per_Capito > PIB_per_Capito2){
-      printf ("A cidade com maior PIB per capita é: %s\n", Nome_da_Cidade);
+      printf ("A cidade vencedora é: %s\n", Nome_da_Cidade);
   } else {
-      printf ("A cidade com maior PIB per capita é: %s\n", Nome_da_Cidade2);
+      printf ("A cidade vencedora é: %s\n", Nome_da_Cidade2);
   }
                                                                                                                                                                                                                      
   // Exibição dos Resultados:
