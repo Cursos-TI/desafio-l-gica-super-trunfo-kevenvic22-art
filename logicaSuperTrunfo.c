@@ -100,7 +100,7 @@ int main() {
       printf ("A cidade vencedora é: %s\n", Nome_da_Cidade2);
   }
     printf("\nNúmero de pontos turísticos: %s = %d\n", Nome_da_Cidade, numero_de_pontos_Turísticos);
-    printf("Número de pontos turísticos: %s = %d\n", Nome_da_Cidade, numero_de_pontos_Turísticos2);
+    printf("Número de pontos turísticos: %s = %d\n", Nome_da_Cidade2, numero_de_pontos_Turísticos2);
   if(numero_de_pontos_Turísticos > numero_de_pontos_Turísticos2){
       printf ("A cidade vencedora é: %s\n", Nome_da_Cidade);
   } else {
@@ -108,7 +108,7 @@ int main() {
   }
     printf("\nDensidade Populacional: %s = %.2f\n", Nome_da_Cidade, Dencidade_Populacional);
     printf("Densidade Populacional: %s = %.2f\n", Nome_da_Cidade2, Dencidade_Populacional2);
-  if(Dencidade_Populacional > Dencidade_Populacional2){
+  if(Dencidade_Populacional < Dencidade_Populacional2){
       printf ("A cidade vencedora é: %s\n", Nome_da_Cidade);
   } else {
       printf ("A cidade vencedora é: %s\n", Nome_da_Cidade2);
@@ -121,7 +121,7 @@ int main() {
       printf ("A cidade vencedora é: %s\n", Nome_da_Cidade2);
   }
                                                                                                                                                                                                                      
-  // Exibição dos Resultados:
+
                                                                                                                                                                                                                       
 
                                                                                                                                                                                                                           // Exemplo:
