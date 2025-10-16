@@ -101,8 +101,7 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
      printf("%s x %s\n", Pais, Pais2);
      printf("População %s x População %s\n", Pais, Pais2);
      printf("%d x %d\n", Populacao, Populacao2);
-      if (Populacao > Populacao2) 
-      {
+      if (Populacao > Populacao2) {
         printf("####  Carta1 GANHOU!\n");
       } else if (Populacao < Populacao2) {
         printf("#### Carta2 GANHOU! ####\n");
@@ -112,9 +111,9 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
       }
       break;
     case 2:
-       printf("%s x %s\n", Pais, Pais2);
-        printf("Área %s x Área %s\n", Pais, Pais2);
-        printf("%.2f km² x %.2f km²\n", Area, Area2);
+     printf("%s x %s\n", Pais, Pais2);
+     printf("Área %s x Área %s\n", Pais, Pais2);
+     printf("%.2f km² x %.2f km²\n", Area, Area2);
       if (Area > Area2) 
       {
         printf("A cidade vencedora é: %s\n",  Pais);
@@ -125,6 +124,9 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
       }
       break;
     case 3:
+     printf("%s x %s\n", Pais, Pais2);
+      printf("PIB %s x PIB %s\n", Pais, Pais2); 
+      printf("R$ %.2f x R$ %.2f\n", PIB, PIB2);
       if (PIB > PIB2) {
         printf("A cidade vencedora é: %s\n",Pais);
       } else if (PIB < PIB2) {
@@ -134,6 +136,9 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
       }
       break;
     case 4:
+     printf("%s x %s\n", Pais, Pais2);
+     printf("Número de Pontos Turísticos %s x Número de Pontos Turísticos %s\n", Pais, Pais2);
+     printf("%d x %d\n", numero_de_pontos_Turísticos, numero_de_pontos_Turísticos2);
       if (numero_de_pontos_Turísticos > numero_de_pontos_Turísticos2  ) {
         printf("A cidade vencedora é: %s\n", Pais);
       } else if (numero_de_pontos_Turísticos < numero_de_pontos_Turísticos2 ) {
@@ -143,15 +148,22 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
       }
       break;
     case 5:
-      if (Dencidade_Populacional > Dencidade_Populacional2) {
+     printf("%s x %s\n", Pais, Pais2);
+     printf("Densidade Populacional %s x Densidade Populacional %s\n", Pais, Pais2);
+     printf("%.2f hab/km² x %.2f hab/km²\n", Dencidade_Populacional, Dencidade_Populacional2);
+      if (Dencidade_Populacional < Dencidade_Populacional2) {
         printf("A cidade vencedora é: %s\n", Pais);
-      } else if (Dencidade_Populacional < Dencidade_Populacional2) {
+      } else if (Dencidade_Populacional > Dencidade_Populacional2) {
         printf("A cidade vencedora é: %s\n", Pais2);
       } else {
         printf("Empate na Densidade Populacional!\n");
       }
       break;
     case 6:
+     printf("%s x %s\n", Pais, Pais2);
+     printf("PIB per Capita %s x PIB per Capita %s\n", Pais, Pais2);
+     printf("R$ %.2f x R$ %.2f\n", PIB_per_Capito, PIB_per_Capito2);
+    
       if (PIB_per_Capito > PIB_per_Capito2) {
         printf("A cidade vencedora é: %s\n", Pais);
       } else if (PIB_per_Capito < PIB_per_Capito2) {
