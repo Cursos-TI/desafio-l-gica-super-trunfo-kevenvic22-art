@@ -34,7 +34,8 @@ int main() {
    int comparacao1, comparacao2;
   // variável para armazenar os resultados das comparações
   int carta1 = 0, carta2 = 0;
-  
+  // variavel paara doma de atributos 
+  float somaAtributo_carta1,  somaAtributo_carta2;
 
   // printf para boas vindas ao usuário
   printf("        **** Bem-vindo ao Jogo Super Trunfo - Países! ****\n");
@@ -103,6 +104,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
   switch (comparacao1) {
     case 1:
      printf("Voçê escolheo ( População ) ");
+     somaAtributo_carta1 += (float)Populacao;
+     somaAtributo_carta2 += (float)Populacao2;
        if( Populacao == Populacao2){
         carta1 += 1;
         carta2 += 1;
@@ -114,6 +117,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
       break;
       case 2:
         printf("Voçê escolheo ( Área ) ");
+        somaAtributo_carta1 += (float)Area;
+        somaAtributo_carta2 += (float)Area2;
         if (Area == Area2) {
           carta1 += 1;
           carta2 += 1;
@@ -125,6 +130,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
         break;
       case 3:
         printf("Voçê escolheo ( PIB ) ");
+      somaAtributo_carta1 += (float)PIB;
+      somaAtributo_carta2 +=(float)PIB2;
         if (PIB == PIB2) {
           carta1 += 1;
           carta2 += 1;
@@ -136,6 +143,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
         break;
       case 4:
         printf("Voçê escolheo ( Número de pontos Turísticos ) ");
+        somaAtributo_carta1 += (float)numero_de_pontos_Turísticos;
+        somaAtributo_carta2 += (float)numero_de_pontos_Turísticos2;
         if (numero_de_pontos_Turísticos == numero_de_pontos_Turísticos2) {
           carta1 += 1;
           carta2 += 1;
@@ -147,10 +156,12 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
         break;
       case 5:
         printf("Voçê escolheo ( Densidade Populacional ) ");
+         somaAtributo_carta1 +=(float) Dencidade_Populacional;
+        somaAtributo_carta2 += (float)Dencidade_Populacional2;
         if (Dencidade_Populacional == Dencidade_Populacional2) {
           carta1 += 1;
           carta2 += 1;
-        } else if (Dencidade_Populacional > Dencidade_Populacional2) {
+        } else if (Dencidade_Populacional < Dencidade_Populacional2) {
           carta1 += 1;
         } else {
           carta2 += 1;
@@ -158,6 +169,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
         break;
       case 6:
         printf("Voçê escolheo ( PIB per Capita ) ");
+         somaAtributo_carta1 +=(float)PIB_per_Capito;
+        somaAtributo_carta2 +=(float)PIB2;
         if (PIB_per_Capito == PIB_per_Capito2) {
           carta1 += 1;
           carta2 += 1;
@@ -189,8 +202,11 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
     printf("Você escolheu o mesmo atributos!\n");
   } else {
     switch (comparacao2) {
-    case 1:
+     case 1:
      printf("Voçê escolheo ( População ) ");
+
+     somaAtributo_carta1 += (float)Populacao;
+     somaAtributo_carta2 +(float)Populacao2;
        if( Populacao == Populacao2){
         carta1 += 1;
         carta2 += 1;
@@ -200,9 +216,10 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
         carta2 += 1;
      };
       break;
-
       case 2:
         printf("Voçê escolheo ( Área ) ");
+        somaAtributo_carta1 += (float)Area;
+        somaAtributo_carta2 += (float)Area2;
         if (Area == Area2) {
           carta1 += 1;
           carta2 += 1;
@@ -214,6 +231,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
         break;
       case 3:
         printf("Voçê escolheo ( PIB ) ");
+      somaAtributo_carta1 += (float)PIB;
+      somaAtributo_carta2 +=(float)PIB2;
         if (PIB == PIB2) {
           carta1 += 1;
           carta2 += 1;
@@ -225,6 +244,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
         break;
       case 4:
         printf("Voçê escolheo ( Número de pontos Turísticos ) ");
+        somaAtributo_carta1 += (float)numero_de_pontos_Turísticos;
+        somaAtributo_carta2 += (float)numero_de_pontos_Turísticos2;
         if (numero_de_pontos_Turísticos == numero_de_pontos_Turísticos2) {
           carta1 += 1;
           carta2 += 1;
@@ -236,10 +257,12 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
         break;
       case 5:
         printf("Voçê escolheo ( Densidade Populacional ) ");
+         somaAtributo_carta1 +=(float) Dencidade_Populacional;
+        somaAtributo_carta2 += (float)Dencidade_Populacional2;
         if (Dencidade_Populacional == Dencidade_Populacional2) {
           carta1 += 1;
           carta2 += 1;
-        } else if (Dencidade_Populacional > Dencidade_Populacional2) {
+        } else if (Dencidade_Populacional < Dencidade_Populacional2) {
           carta1 += 1;
         } else {
           carta2 += 1;
@@ -247,6 +270,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
         break;
       case 6:
         printf("Voçê escolheo ( PIB per Capita ) ");
+         somaAtributo_carta1 +=(float)PIB_per_Capito;
+        somaAtributo_carta2 +=(float)PIB2;
         if (PIB_per_Capito == PIB_per_Capito2) {
           carta1 += 1;
           carta2 += 1;
@@ -261,7 +286,95 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
         break;
     }
     // soma dos 2 atributos escolhio para cada carta 
-    
+     if (somaAtributo_carta1 == somaAtributo_carta2){
+      printf("Empate na somas dos atributos");
+     } else if (somaAtributo_carta1 > somaAtributo_carta2){
+      carta1 += 1;
+     } else {
+      carta2 += 1;
+     }
+
+
+     // Resultado do jogor
+     printf("**** Chagamos a hora mais esperada  ****");
+     printf("   A hora do ( RESULTADO DO GANHADOR!) ");
+     printf("Os paises que foram escolidos foi:\n");
+     printf(" %D x %d ", Pais, Pais2);
+     printf("Os atributos usados na comparação foi:\n");
+     printf(" %30s , %30s ", comparacao1, comparacao2 );
+     // Mostra o primeiro atributo e seus valores
+     printf("Os valores de cada atributo fio:");
+     printf ("Os atributos da carta 1:");
+     switch (comparacao1)
+     {
+     case 1:
+     printf("População 1 = %d\n", Populacao);
+     printf("População 2 = %d\n", Populacao2);
+      break;
+     case 2:
+     printf("ÁRIA 1 = %2f\n", Area);
+     printf("ÁRIA 2 = %2f\n", Area2);
+      break;
+     case 3:
+     printf("PIB 1 = %2f\n", PIB);
+     printf("PIB 2 = %2f\n", PIB2);
+      break;
+     case 4:
+     printf("Pontos turísticos 1 = %d\n", numero_de_pontos_Turísticos);
+     printf("Pontos turísticos 2 = %d\n",  numero_de_pontos_Turísticos2);
+      break;
+     case 5:
+     printf(" Dencidade Populacional 1 = %2f\n", Dencidade_Populacional);
+     printf(" Dencidade Populacional 2 = %2f\n", Dencidade_Populacional);
+      break;
+     case 6:
+      printf("PIB per Capito 1 = %2f\n", PIB_per_Capito);
+      printf("PIB per Capito 2 = %2f\n", PIB_per_Capito2);
+      break;
+     }
+
+      // Mostra o segundo atributo e seus valores
+   switch (comparacao2)
+     {
+     case 1:
+     printf("População 1 = %d\n", Populacao);
+     printf("População 2 = %d\n", Populacao2);
+      break;
+     case 2:
+     printf("ÁRIA 1 = %2f\n", Area);
+     printf("ÁRIA 2 = %2f\n", Area2);
+      break;
+     case 3:
+     printf("PIB 1 = %2f\n", PIB);
+     printf("PIB 2 = %2f\n", PIB2);
+      break;
+     case 4:
+     printf("Pontos turísticos 1 = %d\n", numero_de_pontos_Turísticos);
+     printf("Pontos turísticos 2 = %d\n",  numero_de_pontos_Turísticos2);
+      break;
+     case 5:
+     printf(" Dencidade Populacional 1 = %2f\n", Dencidade_Populacional);
+     printf(" Dencidade Populacional 2 = %2f\n", Dencidade_Populacional);
+      break;
+     case 6:
+      printf("PIB per Capito 1 = %2f\n", PIB_per_Capito);
+      printf("PIB per Capito 2 = %2f\n", PIB_per_Capito2);
+      break;
+     }  // FIM DO segundo atributo e seus valores
+      // valores das domas dos atributos 
+     printf("A soma dos atributos para cada carta");
+     printf("Atributos carta 1 = %2.f", somaAtributo_carta1);
+     printf("Atributos carta 2 = %2.f", somaAtributo_carta2);
+
+     /// Resultado da carta que venceu!
+     if(carta1 == 2){
+      printf("A GRANDE VEMCEDORA E A ***** CARTA 1 *****");
+     } else if (carta2 == 2){
+      printf("A GRANDE VEMCEDORA E A ***** CARTA 2 *****");
+     } else {
+      printf ("**** TIVEMOS UM EMPATE *****");
+     }
+ 
   }
   return 0;
 }
