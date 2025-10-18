@@ -313,7 +313,7 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
      printf("População 1 x População 2\n");
       break;
      case 2:
-     printf("Ária 1 x Área 2\n");
+     printf("Área 1 x Área 2\n");
       break;
      case 3:
      printf("PIB 1 x PIB 2\n");
@@ -359,8 +359,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
      switch (comparacao1)
      {
      case 1:
-     printf("População 1 = %d\n", Populacao);
-     printf("População 2 = %d\n", Populacao2);
+     printf("População 1 = %2f\n", Populacao);
+     printf("População 2 = %2f\n", Populacao2);
       break;
      case 2:
      printf("ÁRIA 1 = %2f\n", Area);
@@ -371,8 +371,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
      printf("PIB 2 = %2f\n", PIB2);
       break;
      case 4:
-     printf("Pontos turísticos 1 = %d\n", numero_de_pontos_Turísticos);
-     printf("Pontos turísticos 2 = %d\n",  numero_de_pontos_Turísticos2);
+     printf("Pontos turísticos 1 = %2f\n", numero_de_pontos_Turísticos);
+     printf("Pontos turísticos 2 = %2f\n",  numero_de_pontos_Turísticos2);
       break;
      case 5:
      printf(" Dencidade Populacional 1 = %2f\n", Dencidade_Populacional);
@@ -388,8 +388,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
    switch (comparacao2)
      {
      case 1:
-     printf("População 1 = %d\n", Populacao);
-     printf("População 2 = %d\n", Populacao2);
+     printf("População 1 = %2f\n", Populacao);
+     printf("População 2 = %2f\n", Populacao2);
       break;
      case 2:
      printf("ÁRIA 1 = %2f\n", Area);
@@ -400,8 +400,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
      printf("PIB 2 = %2f\n", PIB2);
       break;
      case 4:
-     printf("Pontos turísticos 1 = %d\n", numero_de_pontos_Turísticos);
-     printf("Pontos turísticos 2 = %d\n",  numero_de_pontos_Turísticos2);
+     printf("Pontos turísticos 1 = %2f\n", numero_de_pontos_Turísticos);
+     printf("Pontos turísticos 2 = %2f\n",  numero_de_pontos_Turísticos2);
       break;
      case 5:
      printf(" Dencidade Populacional 1 = %2f\n", Dencidade_Populacional);
