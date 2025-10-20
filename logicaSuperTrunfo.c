@@ -46,37 +46,37 @@ int main() {
   // Cadastro das Cartas, entra dados de cada variável
     // Cadastro da primeira carta                                                      
   printf ("  **** Cadastro da Carta 1 ****\n"); // printf para separar o cadastro das cartas
-  printf(" (exemplo:Coreia-do-Sul como deve digitar nume composto)\nDigite a nome do Pais 1:\n ");
+  printf(" (exemplo:Coreia-do-Sul como deve digitado  nume composto)\nDigite a nome do Pais 1:\n");
   scanf("%25s", Pais);
-  printf("(Se for nome composto use - entre eles exemplo:Buenos-Aires)\nDigite o nome da Capital 2:\n");
+  printf("(Se for nome composto use - entre eles exemplo:Buenos-Aires)\nDigite o nome da Capital do Pais:\n");
   scanf("%25s", Capital);
   printf("(O codigo da carta e composto pela primeira letra do Pais + primeira letra da capital + 01 )\n Digite o codigo da Carta1:\n");
-  scanf("%4s", Codigo_da_Carta);
+  scanf("%20s", Codigo_da_Carta);
   printf(" ( O número de habitantes do Pais )\n Digite a população do Pais 1 (ex: 100000 ):\n");
-  scanf("%2f", &Populacao);
+  scanf("%f", &Populacao);
   printf("Digite a área do Pais 1 (em km²):\n");
-  scanf("%2f", &Area);
+  scanf("%f", &Area);
   printf("( O produto interno bruto da Pais )\n Digite o PIB do Pais 1:\n");
-  scanf("%2f", &PIB);
+  scanf("%f", &PIB);
   printf("Digite o número de pontos turísticos do Pais 1:\n");
-  scanf("%2f", &numero_de_pontos_Turísticos); 
+  scanf("%f", &numero_de_pontos_Turísticos); 
   
    // Cadastro da segunda carta                                                                                                                            
 printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastro das cartas
-  printf(" (Se for nome composto use - entre eles exemplo:Coreia-do-Sul) \nDigite a nome do Pais 1:\n ");
+  printf(" (exemplo:Coreia-do-Sul como deve digitado  nume composto)\nDigite a nome do Pais 1:\n");
   scanf("%25s", Pais2);
-  printf("(Se for nome composto use - entre eles exemplo:Buenos-Aires) \nDigite o nome da Capital 2:\n");
+  printf("(Se for nome composto use - entre eles exemplo:Buenos-Aires) \nDigite o nome da Capital do Pais:\n");
   scanf("%25s", Capital2);
   printf("(O codigo da carta e composto pela primeira letra do Pais + primeira letra da Capital + 02)\n Digite o codigo da carta2:\n");
-  scanf("%4s", Codigo_da_Carta2);
+  scanf("%20s", Codigo_da_Carta2);
   printf("( O número de habitantes do Pais )\n Digite a população do Pais 2:\n");
-  scanf("%2f", &Populacao2);
+  scanf("%f", &Populacao2);
   printf("Digite a área do Pais 2 (em km²):\n");
-  scanf("%2f", &Area2);
+  scanf("%f", &Area2);
   printf("(O produto interno bruto do Pais)\n Digite o PIB do Pais 2:\n");
-  scanf("%2f", &PIB2);
+  scanf("%f", &PIB2);
   printf("Digite o número de pontos turísticos do Pais  2:\n");
-  scanf("%2f", &numero_de_pontos_Turísticos2); 
+  scanf("%f", &numero_de_pontos_Turísticos2); 
   
   // Área para cálculos Densidade Populacional e PIB per capita 
   Dencidade_Populacional = (float) Populacao / Area;
@@ -297,16 +297,17 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
 
      // Resultado do jogor
      printf("\n\n\n****  Chagamos a hora mais esperada  ****\n");
-     printf("*** A hora do ( RESULTADO DO GANHADOR!) ***\n ");
+     printf("    *** RESULTADO DO GANHADOR! ***\n\n ");
 
 
      // area de exibir os paises
      printf("Os paises que foram escolidos foi:\n");
-     printf(" %25s \n%25s \n", Pais, Pais2);
+     printf("-%s\n", Pais);
+     printf("-%s\n", Pais2);
 
      
      // area de exebir os nome dos escolhidos atributos
-     printf("Os atributos que batalharam foi:\n");
+     printf("\nOs atributos que batalharam foi:\n");
      switch (comparacao1)
      {
     case 1:
@@ -336,7 +337,7 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
      printf("População 1 x População 2\n");
       break;
      case 2:
-     printf("Ária 1 x Área 2\n");
+     printf("Área 1 x Área 2\n");
       break;
      case 3:
      printf("PIB 1 x PIB 2\n");
@@ -354,7 +355,7 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
 
     
      // Mostra o primeiro atributo e seus valores
-     printf("Os valores de cada atributo fio:\n");
+     printf("\nOs valores de cada atributo fio:\n");
      printf ("Os atributos da carta 1:\n");
      switch (comparacao1)
      {
@@ -363,8 +364,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
      printf("População 2 = %2f\n", Populacao2);
       break;
      case 2:
-     printf("ÁRIA 1 = %2f\n", Area);
-     printf("ÁRIA 2 = %2f\n", Area2);
+     printf("ÁREA 1 = %2f\n", Area);
+     printf("ÁREA 2 = %2f\n", Area2);
       break;
      case 3:
      printf("PIB 1 = %2f\n", PIB);
@@ -385,6 +386,7 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
      }
 
       // Mostra o segundo atributo e seus valores
+   printf ("Os atributos da carta 2:\n");
    switch (comparacao2)
      {
      case 1:
@@ -392,8 +394,8 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
      printf("População 2 = %2f\n", Populacao2);
       break;
      case 2:
-     printf("ÁRIA 1 = %2f\n", Area);
-     printf("ÁRIA 2 = %2f\n", Area2);
+     printf("ÁREA 1 = %2f\n", Area);
+     printf("ÁREA 2 = %2f\n", Area2);
       break;
      case 3:
      printf("PIB 1 = %2f\n", PIB);
@@ -413,17 +415,17 @@ printf ("\n  **** Cadastro da Carta 2 ****\n"); // printf para separar o cadastr
       break;
      }  // FIM DO segundo atributo e seus valores
       // valores das domas dos atributos 
-     printf("A soma dos atributos para cada carta\n");
-     printf("Atributos carta 1 = %2.f\n", somaAtributo_carta1);
-     printf("Atributos carta 2 = %2.f\n", somaAtributo_carta2);
+     printf("\nA soma dos atributos para cada carta\n");
+     printf("Atributos carta 1 = %f\n", somaAtributo_carta1);
+     printf("Atributos carta 2 = %f\n", somaAtributo_carta2);
 
      /// Resultado da carta que venceu!
-     if(carta1 == 2){
-      printf("A GRANDE VEMCEDORA E A ***** CARTA 1 *****");
-     } else if (carta2 == 2){
-      printf("A GRANDE VEMCEDORA E A ***** CARTA 2 *****");
+     if(carta1 == 3 || carta1 == 2){
+      printf("\nA GRANDE VEMCEDORA É\n***** CARTA 1 *****");
+     } else if (carta2 == 3 || carta2 == 2){
+      printf("\nA GRANDE VEMCEDORA É\n***** CARTA 2 *****");
      } else {
-      printf ("**** TIVEMOS UM EMPATE *****");
+      printf ("\n**** TIVEMOS UM EMPATE *****");
      }
  
   }
